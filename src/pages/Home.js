@@ -1,4 +1,10 @@
+import { useEffect } from "react";
+
 function Home() {
+  useEffect(() => {
+    document.title = 'Piekļūstamības atziņas';
+  }, []);
+
   return (
     <div className="Home">
       <>
