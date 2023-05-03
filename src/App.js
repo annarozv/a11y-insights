@@ -6,7 +6,7 @@ import Tutorials from './pages/Tutorials';
 import Resources from './pages/Resources';
 import Home from './pages/Home';
 import Footer from './Footer';
-import Sitemap from './pages/Sitemap';
+import Navigation from './pages/Navigation';
 import NotFound from './pages/NotFound';
 import { useRef } from 'react';
 import Developers from './pages/tutorials/Developers';
@@ -24,7 +24,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Link id="accessible-link" onClick={focusMain}>Pāriet pie galvenās satura daļas</Link>
+        <Link className="Accessible-link" onClick={focusMain}>Pāriet pie galvenās satura daļas</Link>
+        <Link className="Accessible-link" to='/navigation'>Vietnes karte</Link>
         <Header />
         <div id='main' tabIndex='0' ref={refMain} className='Main'>
           <Routes>
@@ -36,7 +37,7 @@ function App() {
               <Route path='/testers' Component={Testers} />
               <Route path='/resources' Component={Resources} />
               <Route path='/about' Component={About} />
-              <Route path='/navigation' Component={Sitemap} />
+              <Route path='/navigation' Component={Navigation} />
               <Route path='*' Component={NotFound} />
           </Routes>
         </div>
