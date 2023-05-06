@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Resources from "./Resources";
 
 function About() {
   useEffect(() => {
@@ -14,7 +13,7 @@ function About() {
       </div>
       <div className="Main-fragment">
         <h2>Ideja un mērķis</h2>
-        <p>“Piekļūstamības atziņas” ir piekļūstams informatīvs tīmekļa resurss, kura mērķis ir vienkāršiem vārdiem paskaidrot, kas ir piekļūstamība tīmeklī, kāpēc tā ir svarīga un kādā veidā to ir iespējams nodrošināt.</p>
+        <p>“Piekļūstamības atziņas” ir <span className="Main-bold">atklāts piekļūstams informatīvs tīmekļa resurss</span>, kura mērķis ir vienkāršiem vārdiem paskaidrot, kas ir piekļūstamība tīmeklī, kāpēc tā ir svarīga un kādā veidā to ir iespējams nodrošināt.</p>
         <p>Šis resurss tika izstrādāts kā praktiska daļa bakalaura darba “Tīmekļa vietņu piekļūstamības nodrošināšana” ietvaros. Tīmekļa vietni un tās saturu izstrādāja Latvijas Universitātes Datorikas fakultātes studente Anna Rozvadovska.</p>
       </div>
       <div className="Main-fragment">

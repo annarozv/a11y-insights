@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 
 function NotFound() {
+    useEffect(() => {
+        document.title = 'Piekļūstamības atziņas | Lapa nav atrasta';
+    }, []);
+
     return (
         <>
             <h1>Ups! Lapa nav atrasta!</h1>

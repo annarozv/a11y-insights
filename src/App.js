@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Header';
 import About from './pages/About';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Tutorials from './pages/Tutorials';
+import Tutorials from './pages/tutorials/Tutorials';
 import Resources from './pages/Resources';
 import Home from './pages/Home';
 import Footer from './Footer';
