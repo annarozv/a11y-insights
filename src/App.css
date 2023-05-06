@@ -265,6 +265,10 @@ footer {
   .Main-buttons {
     flex-direction: column;
   }
+
+  .Main-button {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -323,6 +327,11 @@ footer {
 
   .Main {
     width: 90%;
+  }
+
+  .Main-button {
+    width: 90%;
+    margin: 10px 0;
   }
 
   .Footer-copyright, .Footer-link {
