@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/a11y-insights/static/css/main.17163cca.css",
-    "main.js": "/a11y-insights/static/js/main.be8adf73.js",
+    "main.css": "/a11y-insights/static/css/main.c09b6f2a.css",
+    "main.js": "/a11y-insights/static/js/main.21788df0.js",
     "static/js/787.a8ae9d7d.chunk.js": "/a11y-insights/static/js/787.a8ae9d7d.chunk.js",
     "static/media/Tahoma.ttf": "/a11y-insights/static/media/Tahoma.90837b522a5871209962.ttf",
     "static/media/Verdana.ttf": "/a11y-insights/static/media/Verdana.beb045335cb8a503fb8c.ttf",
     "static/media/Verdana_Bold.ttf": "/a11y-insights/static/media/Verdana_Bold.2f7bf8991594d31b66e2.ttf",
     "static/media/icon.svg": "/a11y-insights/static/media/icon.78eef3ed1e06924db93ba211631f5705.svg",
     "index.html": "/a11y-insights/index.html",
-    "main.17163cca.css.map": "/a11y-insights/static/css/main.17163cca.css.map",
-    "main.be8adf73.js.map": "/a11y-insights/static/js/main.be8adf73.js.map",
+    "main.c09b6f2a.css.map": "/a11y-insights/static/css/main.c09b6f2a.css.map",
+    "main.21788df0.js.map": "/a11y-insights/static/js/main.21788df0.js.map",
     "787.a8ae9d7d.chunk.js.map": "/a11y-insights/static/js/787.a8ae9d7d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.17163cca.css",
-    "static/js/main.be8adf73.js"
+    "static/css/main.c09b6f2a.css",
+    "static/js/main.21788df0.js"
   ]
 }
