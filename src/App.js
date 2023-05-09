@@ -27,7 +27,7 @@ function App() {
         <Link className="Accessible-link" onClick={focusMain}>Pāriet pie galvenās satura daļas</Link>
         <Link className="Accessible-link" to='/navigation'>Vietnes karte</Link>
         <Header />
-        <div id='main' tabIndex='0' ref={refMain} className='Main'>
+        <main tabIndex='0' ref={refMain} className='Main'>
           <Routes>
               <Route exact path='/'  Component={Home} />
               <Route path='/tutorials' Component={Tutorials} />
@@ -40,7 +40,7 @@ function App() {
               <Route path='/navigation' Component={Navigation} />
               <Route path='*' Component={NotFound} />
           </Routes>
-        </div>
+        </main>
         <Footer />
       </div>
     </Router>

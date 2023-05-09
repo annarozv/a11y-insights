@@ -7,21 +7,26 @@ function Resources() {
   }, []);
 
   return (
-    <div className="Resources">
+    <>
       <h1>Inforesursi</h1>
-      <div className="Main-fragment">
+      <section className="Main-fragment">
         <h2>Tiesiskie regulējumi, kas attiecas uz tīmekļa piekļūstamību Latvijā</h2>
         <p>Galvenais tiesību akts Latvijā, kas nosaka piekļūstamības prasības <span className="Main-bold">publiskā sektora iestāžu tīmekļa vietnēm</span>, ir Ministru kabineta noteikumi Nr. 445 <Link className="Main-link" to="https://likumi.lv/ta/id/316109-kartiba-kada-iestades-ievieto-informaciju-interneta" target="_blank">“Kārtība, kādā iestādes ievieto informāciju internetā”</Link>. </p>
-        <p>Pagaidām Latvijā <span className="Main-bold">nav</span> spēkā tiesiskie regulējumi, kas paredzētu piekļūstamības <span className="Main-bold">prasības privātā sektora iestādēm</span>, bet 2025. gadā spēkā stāsies <Link className="Main-link" to="https://likumi.lv/ta/id/340554-precu-un-pakalpojumu-pieklustamibas-likums" target="_blank">“Preču un pakalpojumu piekļūstamības likums”</Link>, kas paredz piekļūstamības prasības sekojošiem pakalpojumiem:</p>
+        <p>Pagaidām Latvijā <span className="Main-bold">nav</span> spēkā tiesiskie regulējumi, kas paredzētu piekļūstamības <span className="Main-bold">prasības privātā sektora iestādēm</span>, bet 2025. gadā spēkā stāsies <Link className="Main-link" to="https://likumi.lv/ta/id/340554-precu-un-pakalpojumu-pieklustamibas-likums" target="_blank">“Preču un pakalpojumu piekļūstamības likums”</Link>, kas paredz piekļūstamības prasības sekojošajām precēm un pakalpojumiem:</p>
         <ul className="Main-list">
+          <li><span>Datoriem un to operētājsistēmām</span></li>
+          <li><span>Pašapkalpošanās termināļiem</span></li>
+          <li><span>Elektroniskajām grāmatām un to programmatūrai</span></li>
+          <li><span>Finanšu pakalpojumiem</span></li>
+          <li><span>E-komercijas pakalpojumiem</span></li>
           <li><span>Elektronisko sakaru pakalpojumiem</span></li>
           <li><span>Pakalpojumiem, kas nodrošina piekļuvi audiovizuāliem elektronisko plašsaziņas līdzekļu pakalpojumiem</span></li>
           <li><span>Transporta pasažieru pārvadājumu pakalpojumiem un ar tiem saistītājām tehnoloģijām</span></li>
         </ul>
-      </div>
-      <div className="Main-fragment">
+      </section>
+      <section className="Main-fragment">
         <h2>Vadlīnijas</h2>
-        <p>Galvenās tīmekļa satura nodrošināšanas vadlīnijas, kas ir pamata visiem tiesiskajiem regulējumiem, kas ir spēkā Latvijā un Eiropas Savienībā, ir WCAG (angliski <span lang="en"><i>Web Content Accessibility Guidelines</i></span>) vadlīnijas. Arī šajā tīmekļa vietnē atrodamas pamācības tika izstrādātās, balstoties uz WCAG vadlīnijām.</p>
+        <p>Galvenās tīmekļa satura nodrošināšanas vadlīnijas, kas ir pamata visiem tiesiskajiem regulējumiem, kas ir spēkā Latvijā un Eiropas Savienībā, ir <span className="Main-bold">Tīmekļa satura piekļūstamības vadlīnijas</span> jeb WCAG (angliski <span lang="en"><i>Web Content Accessibility Guidelines</i></span>) vadlīnijas. Arī šajā tīmekļa vietnē atrodamas pamācības tika izstrādātās, balstoties uz WCAG vadlīnijām.</p>
         <p>Vairāk informācijas:</p>
         <ul className="Main-list">
           <li>
@@ -43,8 +48,8 @@ function Resources() {
             </Link>
           </li>
         </ul>
-      </div>
-      <div className="Main-fragment">
+      </section>
+      <section className="Main-fragment">
         <h2>Citi resursi</h2>
         <p>Papildus resursi par tīmekļa piekļūstamību:</p>
         <ul className="Main-list">
@@ -94,8 +99,8 @@ function Resources() {
             </Link>
           </li>
         </ul>
-      </div>
-    </div>
+      </section>
+    </>
   );
 }
 
