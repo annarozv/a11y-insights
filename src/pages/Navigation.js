@@ -9,13 +9,13 @@ function Navigation() {
  return (
   <div className="Navigation">
     <h1>Vietnes karte</h1>
-    <ul className="Main-list" role="list">
+    <ul className="Main-list" role="navigation">
       <li>
         <Link className="Main-link" to='/'>Sākumlapa</Link>
       </li>
       <li>
         <Link className="Main-link" to='/tutorials'>Pamācības</Link>
-        <ul className="Main-list Main-list__nested" role="list">
+        <ul className="Main-list Main-list__nested">
           <li>
             <Link className="Main-link" to='/designers'>Pamācības dizaineriem</Link>
           </li>

@@ -27,7 +27,7 @@ function App() {
         <Link className="Accessible-link" onClick={focusMain}>Pāriet pie galvenās satura daļas</Link>
         <Link className="Accessible-link" to='/navigation'>Vietnes karte</Link>
         <Header />
-        <main tabIndex='0' ref={refMain} className='Main'>
+        <main tabIndex={0} ref={refMain} className='Main'>
           <Routes>
               <Route exact path='/'  Component={Home} />
               <Route path='/tutorials' Component={Tutorials} />

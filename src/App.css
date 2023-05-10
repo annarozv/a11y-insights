@@ -31,6 +31,8 @@
   --deep-taupe: #715c56;
   --nile-green: #aaca97;
   --terra-cotta: #ce7f75;
+  --black: #000000;
+  --white: #ffffff;
 }
 
 .App {
@@ -95,8 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: lighter;
 }
 
-h3 {
+h3, h4 {
   color: var(--volcanic-glass);
+}
+
+u {
+  text-underline-offset: 0.2rem;
 }
 
 .Nav-bar {
@@ -136,6 +142,14 @@ h3 {
 .Main-bold {
   font-family: Verdana Bold, sans-serif;
   font-weight: lighter;
+}
+
+.Main-uppercase {
+  text-transform: uppercase;
+}
+
+.Main-strike {
+  text-decoration: line-through;
 }
 
 .Main-fragment {
@@ -186,6 +200,16 @@ h3 {
   margin-left: 20px;
 }
 
+.Main-list__final {
+  list-style-type: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.Main-list__final li {
+  padding: 0;
+}
+
 .Main-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -215,21 +239,41 @@ h3 {
   color: var(--terra-cotta) !important;
 }
 
-.Designers-goodcontrast, 
-.Designers-badcontrast, 
-.Designers-sans, 
-.Designers-decorative {
+.Main-center {
   text-align: center;
-  padding: 20px;
-  background-color: var(--anthracite);
 }
 
-.Designers-goodcontrast {
+.Main-justify {
+  text-align: justify;
+}
+
+.Main-example {
+  padding: 20px;
+  background-color: var(--anthracite);
   color: var(--white-sand);
+  margin-bottom: 30px;
+}
+
+.Main-example-block {
+  background-color: var(--volcanic-glass);
+}
+
+.Main-hoverable {
+  width: 150px;
+  margin: 30px auto;
+}
+
+.Main-hoverable:hover, .Main-hoverable:focus {
+  background-color: var(--volcanic-glass);
 }
 
 .Designers-badcontrast {
   color: var(--volcanic-glass);
+}
+
+.Designers-overcontrast {
+  color: var(--black);
+  background-color: var(--white);
 }
 
 .Designers-symbols {
@@ -241,7 +285,6 @@ h3 {
 .Designers-symbol {
   margin: auto;
   font-size: 1.3rem;
-  color: var(--white-sand);
 }
 
 .Designers-symbol:hover {
@@ -282,13 +325,39 @@ h3 {
   font-size: 1.5rem;
 }
 
+.Designers-smalltext {
+  font-size: 0.8rem;
+}
+
+.Designers-bigtext {
+  font-size: 1.8rem;
+}
+
+.Designers-input {
+  text-align: center;
+  padding: 30px;
+}
+
+.Designers-input input {
+  height: 20px;
+  background-color: var(--white-sand);
+  border-color: var(--terra-cotta);
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+.Designers-error {
+  color: var(--terra-cotta);
+  margin: 10px 0 0 0;
+}
+
 .Navigation ul {
   list-style-type: "\2937"; /* unicode arrow symbol */
   font-size: 1.3rem;
 }
 
 .Navigation a {  
-  text-decoration: none;
+  text-underline-offset: 0.4rem;
 }
 
 .NotFound-link {
