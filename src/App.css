@@ -470,6 +470,10 @@ footer {
     margin-left: 20px;
   }
 
+  .Main-list__final {
+    margin-left: 0;
+  }
+
   .Main-list li {
     padding-left: 0.6rem;
   }
