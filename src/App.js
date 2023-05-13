@@ -1,18 +1,19 @@
 import './App.css';
-import Header from './Header';
+import Header from './main_components/Header';
 import About from './pages/About';
 import { HashRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Tutorials from './pages/tutorials/Tutorials';
 import Resources from './pages/Resources';
 import Home from './pages/Home';
-import Footer from './Footer';
+import Footer from './main_components/Footer';
 import Navigation from './pages/Navigation';
 import NotFound from './pages/NotFound';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Developers from './pages/tutorials/Developers';
 import Designers from './pages/tutorials/Designers';
 import ContentMakers from './pages/tutorials/ContentMakers';
 import Testers from './pages/tutorials/Testers';
+import SubHeader from './main_components/SubHeader';
 
 function App() {
   const refMain = useRef(null);
@@ -27,6 +28,7 @@ function App() {
         <Link className="Accessible-link" onClick={focusMain}>Pāriet pie galvenās satura daļas</Link>
         <Link className="Accessible-link" to='/navigation'>Vietnes karte</Link>
         <Header />
+        <SubHeader />
         <main tabIndex={0} ref={refMain} className='Main'>
           <Routes>
               <Route exact path='/'  Component={Home} />

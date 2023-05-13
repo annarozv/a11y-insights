@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 function Tutorials() {
   useEffect(() => {
-    document.title = 'Piekļūstamības atziņas | Piekļūstamības nodrošināšanas pamācības';
+    document.title = 'Piekļūstamības nodrošināšanas pamācības | Piekļūstamības atziņas';
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
   }, []);
 
   return (
@@ -11,12 +15,12 @@ function Tutorials() {
       <h1>Piekļūstamības nodrošināšanas pamācības</h1>
       <section className="Main-fragment">
         <h2>Par pamācībām</h2>
-        <p>Šeit ir pieejamas tīmekļa vietņu piekļūstamības nodrošināšanas pamācības dizaineriem, satura veidotājiem, programmētājiem un testētājiem. Pamācības tika izstrādātās, balstoties uz <Link className="Main-link" to="https://wcag.com/resource/what-is-wcag/">WCAG vadlīniju</Link> AA līmeņa prasībām.</p>
+        <p>Šeit ir pieejamas tīmekļa vietņu piekļūstamības nodrošināšanas pamācības dizaineriem, satura veidotājiem, programmētājiem un testētājiem. Pamācības tika izstrādātās, balstoties uz <Link className="Main-link" to='https://wcag.com/resource/what-is-wcag/' target="_blank">WCAG vadlīniju</Link> AA līmeņa prasībām.</p>
       </section>
       <section className="Main-fragment">
         <h2>Pamācības izvēle atkarībā no lomas projektā</h2>
         <p>Pamācības ir sadalītās četrās kategorijās, lai Jūs varētu izvēlēties to, kas būtu aktuāla <span className="Main-bold">tieši Jums</span>.</p>
-        <div className="Main-buttons">
+        <div className="Tutorials-buttons">
           <Link className="Main-button" to='/designers' role="button">Dizaineriem</Link>
           <Link className="Main-button" to='/content-makers' role="button">Satura veidotājiem</Link>
           <Link className="Main-button" to='/developers' role="button">Programmētājiem</Link>

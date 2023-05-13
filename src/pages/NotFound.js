@@ -3,13 +3,13 @@ import { useEffect } from "react";
 
 function NotFound() {
   useEffect(() => {
-    document.title = 'Piekļūstamības atziņas | Lapa nav atrasta';
+    document.title = 'Lapa nav atrasta | Piekļūstamības atziņas';
   }, []);
 
   return (
     <>
       <h1>Ups! Lapa nav atrasta!</h1>
-      <Link className="Main-link NotFound-link" to="/">Uz galveno lapu</Link>
+      <Link className="Main-button Main-center NotFound-link" to="/">Uz galveno lapu</Link>
     </>
   );
 }

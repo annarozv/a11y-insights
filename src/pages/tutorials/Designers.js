@@ -4,7 +4,11 @@ import GroupingExample from '../../images/designers/Grouping.png';
 
 function Designers() {
   useEffect(() => {
-    document.title = 'Piekļūstamības atziņas | Piekļūstamības nodrošināšanas pamācība dizaineriem';
+    document.title = 'Piekļūstamības nodrošināšanas pamācība dizaineriem | Piekļūstamības atziņas';
+  }, []);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
   }, []);
 
   return (
@@ -39,9 +43,9 @@ function Designers() {
           <p>Protams, arī krāsa kopā ar formu informācijas nodošanai var būt nepietiekama gadījumos, kad piekļuvei saturam tiek izmantots ekrānlasītājs.</p>
           <p>Tātad, vizuālajiem komponentiem ir jānodrošina arī <span className="Main-bold">tekstuālās alternatīvas</span>, kā, piemēram, šajā krāsu izvēlnes vizualizācijā:</p>
           <ul className="Designers-colors">
-            <li><span className="Designers-colors-square Main-success" aria-label="Zaļās krāsas kvadrātiņš">&#9209;</span>Zaļā</li>
-            <li><span className="Designers-colors-square Main-light" aria-label="Baltās krāsas kvadrātiņš">&#9209;</span>Baltā</li>
-            <li><span className="Designers-colors-square Main-warning" aria-label="Terakotās krāsas kvadrātiņš">&#9209;</span>Terakotā</li>
+            <li><span className="Designers-colors-square Designers-green" aria-label="Zaļās krāsas kvadrātiņš"></span>Zaļā</li>
+            <li><span className="Designers-colors-square Designers-white" aria-label="Baltās krāsas kvadrātiņš"></span>Baltā</li>
+            <li><span className="Designers-colors-square Designers-red" aria-label="Terakotās krāsas kvadrātiņš"></span>Terakotā</li>
           </ul>
         </section>
       </section>
@@ -112,7 +116,7 @@ function Designers() {
       </section>      
       <section className="Main-fragment">
         <h2>Pielāgojamība</h2>
-        <p>Ir jābūt iespējamam saturam piekļūt ar dažādām ierīcēm, tāpēc <span className="Main-bold">viennozīmīgi</span> dizaina izstrādes posmā ir jāizveido satura izkārtojuma versijas <span className="Main-bold">dažādiem ekrānu izmēriem</span>, vismaz darbvirsmai un viedtālrunim</p>
+        <p>Ir jābūt iespējamam saturam piekļūt ar dažādām ierīcēm, tāpēc <span className="Main-bold">viennozīmīgi</span> dizaina izstrādes posmā ir jāizveido satura izkārtojuma versijas <span className="Main-bold">dažādiem ekrānu izmēriem</span>, vismaz darbvirsmai un viedtālrunim.</p>
       </section> 
       <section className="Main-fragment">
         <h2>Procesu piekļūstamība</h2>
@@ -133,7 +137,7 @@ function Designers() {
           <h3>Skaidri notikumi</h3>
           <p>Lai veicinātu saskarnes saprotamību, laba prakse ir <span className="Main-bold">signalizēt par notiekošajām izmaiņām</span>.</p> 
           <p>Kā, piemēram, šajā pogas vizualizācijā – uzliekot peles kursoru (vai arī elementam nonākot fokusā), notiek krāsas maiņa:</p>
-          <p className="Main-example Main-center Main-hoverable" tabIndex={0}>Poga</p>
+          <Link className="Main-example Main-center Main-hoverable" role="button">Poga</Link>
           <p>Veidlapu gadījumā, ja, piemēram, ir notikusi validācijas kļūda, ievadlaukiem bieži tiek pievienota sarkana apmale. Protams, ir <span className="Main-bold">jāsniedz arī tekstuālā informācija</span> par kļūdu un tās būtību:</p>
           <div className="Main-example Designers-input">
             <input tabIndex={-1}></input>
