@@ -129,6 +129,36 @@ u {
   text-underline-offset: 0.2rem;
 }
 
+.Nav-sub {
+  display: flex;
+  color: var(--white-sand);
+  height: 65px;
+  background-color: var(--anthracite);
+  font-size: 1.1rem;
+}
+
+.Nav-sub-links {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Nav-sub-link {
+  padding: 15px;
+  margin: auto;
+}
+
+.Nav-sub-link:hover, .Nav-sub-link:focus {
+  color: var(--cloud-dancer);
+  background-color: var(--volcanic-glass);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
 .Main {
   color: var(--anthracite);
   font-size: 1.1rem;
@@ -210,7 +240,7 @@ u {
   padding: 0;
 }
 
-.Main-buttons {
+.Tutorials-buttons {
   display: flex;
   flex-wrap: wrap;
 }
@@ -227,7 +257,7 @@ u {
 }
 
 .Main-button:hover, .Main-button:focus {
-  color: var(--white-sand);
+  color: var(--cloud-dancer);
   background-color: var(--deep-taupe);
 }
 
@@ -259,6 +289,7 @@ u {
 }
 
 .Main-hoverable {
+  display: block;
   width: 150px;
   margin: 30px auto;
 }
@@ -309,7 +340,22 @@ u {
 }
 
 .Designers-colors-square {
-  margin-right: 10px;
+  display: inline-block;
+  height: 0.9rem;
+  width: 0.9rem;
+  margin-right: 15px;
+}
+
+.Designers-green {
+  background-color: var(--nile-green);
+}
+
+.Designers-red {
+  background-color: var(--terra-cotta);
+}
+
+.Designers-white {
+  background-color: var(--white-sand);
 }
 
 .Designers-sans, .Designers-decorative {
@@ -351,6 +397,31 @@ u {
   margin: 10px 0 0 0;
 }
 
+.Code-snippet {
+  color: var(--cloud-dancer);
+  background-color: var(--anthracite);
+  padding: 20px;
+  margin-bottom: 25px;
+  white-space: pre-wrap;
+}
+
+.Code-tag {
+  color: var(--nile-green);
+}
+
+.Content-example-link:hover {
+  color: var(--cloud-dancer);
+}
+
+.Content-badlink:hover {
+  color: var(--terra-cotta);
+}
+
+.Content-hearts {
+  font-size: 1.5rem;
+  letter-spacing: 0.5ch;
+}
+
 .Navigation ul {
   list-style-type: "\2937"; /* unicode arrow symbol */
   font-size: 1.3rem;
@@ -362,7 +433,6 @@ u {
 
 .NotFound-link {
   display: block;
-  text-align: center;
 }
 
 footer {
@@ -461,6 +531,29 @@ footer {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .Nav-sub {
+    height: auto;
+  }
+
+  .Nav-sub-links {
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .Nav-sub-links li {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .Nav-sub-link {
+    display: block;
+  }
+}
+
+
 @media screen and (max-width: 600px) {
   .Main {
     width: 80%;
@@ -519,11 +612,15 @@ footer {
     padding: 20px;
   }
 
+  .Nav-sub {
+    display: none;
+  }
+
   .Main {
     width: 90%;
   }
 
-  .Main-button {
+  .Tutorials-button {
     width: 85%;
     margin: 10px auto;
   }

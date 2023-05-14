@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 
 function Resources() {
   useEffect(() => {
-    document.title = 'Piekļūstamības atziņas | Inforesursi';
+    document.title = 'Inforesursi | Piekļūstamības atziņas';
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
   }, []);
 
   return (

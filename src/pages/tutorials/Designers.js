@@ -1,10 +1,14 @@
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import GroupingExample from '../../images/designers/Grouping.png';
+import GroupingExample from '../../images/Grouping.png';
 
 function Designers() {
   useEffect(() => {
-    document.title = 'Piekļūstamības atziņas | Piekļūstamības nodrošināšanas pamācība dizaineriem';
+    document.title = 'Piekļūstamības nodrošināšanas pamācība dizaineriem | Piekļūstamības atziņas';
+  }, []);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
   }, []);
 
   return (
@@ -36,12 +40,12 @@ function Designers() {
             <span className="Designers-symbol Main-success" aria-label="Ķeksītis">&#10004;</span>
             <span className="Designers-symbol Main-warning" aria-label="Krusts">&#10006;</span>
           </div>
-          <p>Protams, arī krāsa kopā ar formu informācijas nodošanai var būt nepietiekama gadījumos, kad piekļuvei saturam tiek izmantots ekrānlasītājs.</p>
+          <p>Protams, arī krāsa kopā ar formu informācijas nodošanai var būt <span className="Main-bold">nepietiekama</span> gadījumos, kad piekļuvei saturam tiek izmantots ekrānlasītājs.</p>
           <p>Tātad, vizuālajiem komponentiem ir jānodrošina arī <span className="Main-bold">tekstuālās alternatīvas</span>, kā, piemēram, šajā krāsu izvēlnes vizualizācijā:</p>
           <ul className="Designers-colors">
-            <li><span className="Designers-colors-square Main-success" aria-label="Zaļās krāsas kvadrātiņš">&#9209;</span>Zaļā</li>
-            <li><span className="Designers-colors-square Main-light" aria-label="Baltās krāsas kvadrātiņš">&#9209;</span>Baltā</li>
-            <li><span className="Designers-colors-square Main-warning" aria-label="Terakotās krāsas kvadrātiņš">&#9209;</span>Terakotā</li>
+            <li><span className="Designers-colors-square Designers-green" aria-label="Zaļās krāsas kvadrātiņš"></span>Zaļā</li>
+            <li><span className="Designers-colors-square Designers-white" aria-label="Baltās krāsas kvadrātiņš"></span>Baltā</li>
+            <li><span className="Designers-colors-square Designers-red" aria-label="Terakotās krāsas kvadrātiņš"></span>Terakotā</li>
           </ul>
         </section>
       </section>
@@ -81,11 +85,11 @@ function Designers() {
         </section>
         <section className="Main-fragment">
           <h3>Teksta struktūra un dekorācija</h3>
-          <p>Ātras atziņas par teksta noformēšanu:</p>
+          <p>Ātrās atziņas par teksta noformēšanu:</p>
           <ul className="Main-list">
             <li>Garākus teksta gabalus ir labāk <span className="Main-bold">sadalīt mazākās rindkopās</span></li>
-            <li>Atsevišķas daļas var strukturēt ar aizzīmju punktu (angliski <span lang="en"><i>bullet points</i></span>) sarakstu palīdzību</li>
-            <li>Optimālais rindas garums ir starp 40 un 75 burtiem</li>
+            <li>Atsevišķas daļas var <span className="Main-bold">strukturēt</span> ar aizzīmju punktu (angliski <span lang="en"><i>bullet points</i></span>) sarakstu palīdzību</li>
+            <li>Optimālais rindas garums ir <span className="Main-bold">starp 40 un 75 burtiem</span></li>
             <li>Var izmantot treknrakstu, lai <span className="Main-bold">izceltu svarīgāko informāciju</span></li>
             <li>Pārāk <span className="Main-bold"><span className="Main-uppercase"><i>daudz</i></span> dekorāciju</span> <span className="Main-strike">pasliktina</span> <span className="Main-uppercase">lasāmību</span></li>
             <li>Dekorācijas ir jāizmanto konsekventi – <u>šīs teksts pasvītrojuma dēļ var tikt uztverts kā saite</u></li>
@@ -112,7 +116,7 @@ function Designers() {
       </section>      
       <section className="Main-fragment">
         <h2>Pielāgojamība</h2>
-        <p>Ir jābūt iespējamam saturam piekļūt ar dažādām ierīcēm, tāpēc <span className="Main-bold">viennozīmīgi</span> dizaina izstrādes posmā ir jāizveido satura izkārtojuma versijas <span className="Main-bold">dažādiem ekrānu izmēriem</span>, vismaz darbvirsmai un viedtālrunim</p>
+        <p>Ir jābūt iespējamam saturam piekļūt ar dažādām ierīcēm, tāpēc <span className="Main-bold">viennozīmīgi</span> dizaina izstrādes posmā ir jāizveido satura izkārtojuma versijas <span className="Main-bold">dažādiem ekrānu izmēriem</span>, vismaz darbvirsmai un viedtālrunim.</p>
       </section> 
       <section className="Main-fragment">
         <h2>Procesu piekļūstamība</h2>
@@ -133,7 +137,7 @@ function Designers() {
           <h3>Skaidri notikumi</h3>
           <p>Lai veicinātu saskarnes saprotamību, laba prakse ir <span className="Main-bold">signalizēt par notiekošajām izmaiņām</span>.</p> 
           <p>Kā, piemēram, šajā pogas vizualizācijā – uzliekot peles kursoru (vai arī elementam nonākot fokusā), notiek krāsas maiņa:</p>
-          <p className="Main-example Main-center Main-hoverable" tabIndex={0}>Poga</p>
+          <Link className="Main-example Main-center Main-hoverable" role="button">Poga</Link>
           <p>Veidlapu gadījumā, ja, piemēram, ir notikusi validācijas kļūda, ievadlaukiem bieži tiek pievienota sarkana apmale. Protams, ir <span className="Main-bold">jāsniedz arī tekstuālā informācija</span> par kļūdu un tās būtību:</p>
           <div className="Main-example Designers-input">
             <input tabIndex={-1}></input>
@@ -141,18 +145,18 @@ function Designers() {
           </div>
         </section>
       </section>
-      <hr/>
+      <hr role="presentation"/>
       <ul className="Main-list Main-list__final">
-          <li> 
-            <Link className="Main-link" to='/content-makers'>Pamācība satura veidotājiem</Link>
-          </li> 
-          <li>
-            <Link className="Main-link" to='/developers'>Pamācība programmētājiem</Link> 
-          </li>
-          <li>
-            <Link className="Main-link" to='/testers'>Pamācība testētājiem</Link>
-          </li>
-        </ul>
+        <li> 
+          <Link className="Main-link" to='/content-makers'>Piekļūstamības nodrošināšana satura veidotājiem</Link>
+        </li> 
+        <li>
+          <Link className="Main-link" to='/developers'>Piekļūstamības nodrošināšana programmētājiem</Link> 
+        </li>
+        <li>
+          <Link className="Main-link" to='/testers'>Piekļūstamības nodrošināšana testētājiem</Link>
+        </li>
+      </ul>
     </>
   );
 }

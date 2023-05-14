@@ -2,8 +2,12 @@ import { useEffect } from "react";
 
 function Developers() {
     useEffect(() => {
-        document.title = 'Piekļūstamības atziņas | Pamācība programmētājiem';
+        document.title = 'Piekļūstamības nodrošināšanas pamācība programmētājiem | Piekļūstamības atziņas';
     }, []);
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
 
     return (
         <>

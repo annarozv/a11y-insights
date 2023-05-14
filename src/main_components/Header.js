@@ -1,5 +1,4 @@
-import './App.css';
-import HeaderLogo from './images/icon.svg';
+import HeaderLogo from '../images/icon.svg';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -9,7 +8,7 @@ function Header() {
         <img 
           className='Header-icon' 
           src={HeaderLogo} 
-          alt='Vietnes logo: cilvēka siluets aplī, cilvēka kreisā roka un kreisā kāja veido P burtu (Piekļūstamība)'
+          alt='Logo'
         />
         <span className='Header-title'>Piekļūstamības Atziņas</span>   
       </Link>     

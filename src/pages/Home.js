@@ -6,6 +6,10 @@ function Home() {
     document.title = 'Piekļūstamības atziņas | Informatīvs resurss';
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, []);
+
   return (
     <>
       <h1>Informatīvs resurss "Piekļūstamības Atziņas"</h1>
