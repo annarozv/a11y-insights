@@ -402,10 +402,24 @@ u {
   background-color: var(--anthracite);
   padding: 20px;
   margin-bottom: 25px;
+  white-space: pre-wrap;
 }
 
 .Code-tag {
   color: var(--nile-green);
+}
+
+.Content-example-link:hover {
+  color: var(--cloud-dancer);
+}
+
+.Content-badlink:hover {
+  color: var(--terra-cotta);
+}
+
+.Content-hearts {
+  font-size: 1.5rem;
+  letter-spacing: 0.5ch;
 }
 
 .Navigation ul {
