@@ -91,7 +91,7 @@ function ContentMakers() {
         <p className="Main-example">Piekļūstamības nodrošināšanas pamācība satura veidotājiem | Piekļūstamības atziņas</p>
         <p>Piemērs formāli korektam, bet nepiekļūstamam un neefektīvam šīs lapas nosaukumam:</p>
         <p className="Main-example">Pamācība satura veidotājiem</p>
-        <p>Šis nosaukums neaprakstītu lapas satura būtību pietiekami, jo netika pieminēta piekļūstamība, kas ir šīs pamācības centrālā vērtība.</p>
+        <p>Šis nosaukums neaprakstītu lapas satura būtību pietiekami, jo netiek pieminēta piekļūstamība, kas ir šīs pamācības centrālā vērtība.</p>
         <p>Protams, lapas nosaukumam nav jābūt arī pārāk garam – ieteikts <span className="Main-bold">optimālais izmērs ir ap 70 simboliem</span>.</p>
         <p><span className="Main-bold">Piezīme:</span> unikāli informatīvi lapu nosaukumi arī <span className="Main-bold">pozitīvi ietekmē SEO</span>.</p>
       </section>

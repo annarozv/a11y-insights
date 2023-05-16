@@ -26,7 +26,7 @@ function Designers() {
           <p>Pietiekams priekšplāna un fona krāsu kontrasts ļauj cilvēkiem ar tādiem redzes traucējumiem kā pasliktināta redze, zemāka kontrastjutība un krāsu uztveres īpatnībām pilnvērtīgi uztvert saturu. </p>
           <p className="Designers-goodcontrast Main-example Main-center">Šim tekstam <span className="Main-bold">ir nodrošināts</span> pietiekams kontrasta koeficients</p>
           <p className="Designers-badcontrast Main-example Main-center">Šim tekstam <span className="Main-bold">nav nodrošināts</span> pietiekams kontrasta koeficients</p>
-          <p>Pēc WCAG vadlīniju prasībām parastajam tekstam ir jānodrošina <span className="Main-bold">vismaz 4.5:1 kontrasta koeficients</span> ar fona krāsu, bet lielam tekstam (kas ir lielāks par 18px vai 14px treknrakstā) vismaz 3:1.</p> 
+          <p>Pēc WCAG vadlīniju prasībām parastajam tekstam ir jānodrošina <span className="Main-bold">vismaz 4.5:1 kontrasta koeficients</span> ar fona krāsu, bet lielam tekstam (kas ir lielāks par 18pt vai 14pt treknrakstā) vismaz 3:1.</p> 
           <p><span className="Main-bold">Svarīgi: baltā krāsa ar melno krāsu veido pārāk augstu kontrastu</span>, kas var radīt neērtības cilvēkiem ar redzes traucējumiem. Lai no tā izvairītos, ir ieteicams baltās krāsas vietā izvēlēties pelēkbalto vai bēšo un melnās krāsas vietā – tumši pelēko.</p>
           <p className="Designers-overcontrast Main-example Main-center">Melns teksts uz balta fona</p>
           <p>Kontrasta koeficientu starp krāsām var <span className="Main-bold">pārbaudīt ar automatizētiem rīkiem</span>, piemēram <Link className='Main-link' to='https://coolors.co/' target='_blank'>Coolors</Link>.</p> 
@@ -97,22 +97,14 @@ function Designers() {
         </section>
       </section>
       <section className="Main-fragment">
-        <h2>Kopējā satura struktūra un navigācija</h2>
-        <section className="Main-fragment Main-fragment__nested">
-          <h3>Informācijas hierarhija</h3>
-          <p>Lai veicinātu satura uztveramību, ir jādefinē <span className="Main-bold">skaidras attiecības starp satura komponentiem</span>. Šo var panākt, pielietojot grupēšanas principus:</p>
-          <figure className="Main-figure">
-            <img className="Main-img" src={GroupingExample} alt="Piemērs neveiksmīgam un veiksmīgam veidlapas ievadlauku noformējumam"></img>
-            <figcaption className="Main-img-caption">Grupēšanas principa pielietošana veidlapas ievadlaukiem</figcaption>
-          </figure>
-          <p>Vizuāli izkliedēti ievadlauki ar vienādām atstarpēm (attēlā pa kreisi) var rādīt lietotājam mulsinājumu un palielināt laiku, kas būs patērēts veidlapas aizpildīšanai, un, iespējams, palielināt arī kļūdu skaitu. Bet, ja mēs <span className="Main-bold">vizuāli sagrupēsim</span> katru ievadlauku un iezīmi, saskarne būs saprotamāka un lietotājam draudzīgāka (attēlā pa labi).</p>
-          <p>Arī šī pamācība kopumā var kalpot par piemēru – <span className="Main-bold">pamācības saturs ir sadalīts vairākās sekcijās</span>, kas ir savstarpēji vizuāli atdalītas – katrai sekcijai ir galvenais virsraksts un sekcijām ir arī apakšsekcijas ar saviem virsrakstiem, un starp tām ir ievērotas atstarpes, kas dod skaidru priekšstatu par to, kur sākas un beidzas katra sekcija.</p>
-        </section>
-        <section className="Main-fragment">
-          <h3>Navigācija</h3>
-          <p>Katrai tīmekļa vietnei ir nepieciešama <span className="Main-bold">skaidra un paredzama navigācija</span>. Šajā tīmekļa vietnē navigācijas panelis augšā ir pieejams katrā vietnes lapā. Tas ļauj izvairīties no situācijas, kur lietotājs varētu uzrasties “strupceļā”.</p>
-          <p>Šajā tīmekļa vietnē ir pieejama arī <Link className='Main-link' to='/navigation'>Vietnes karte</Link> – hierarhisks saraksts ar visām vietnes lapām.</p>
-        </section>
+        <h2>Kopējā satura struktūra</h2>
+        <p>Lai veicinātu satura uztveramību, ir jādefinē <span className="Main-bold">skaidras attiecības starp satura komponentiem</span>. Šo var panākt, pielietojot grupēšanas principus:</p>
+        <figure className="Main-figure">
+          <img className="Main-img" src={GroupingExample} alt="Piemērs neveiksmīgam un veiksmīgam veidlapas ievadlauku noformējumam"></img>
+          <figcaption className="Main-img-caption">Grupēšanas principa pielietošana veidlapas ievadlaukiem</figcaption>
+        </figure>
+        <p>Vizuāli izkliedēti ievadlauki ar vienādām atstarpēm (attēlā pa kreisi) var rādīt lietotājam mulsinājumu un palielināt laiku, kas būs patērēts veidlapas aizpildīšanai, un, iespējams, palielināt arī kļūdu skaitu. Bet, ja mēs <span className="Main-bold">vizuāli sagrupēsim</span> katru ievadlauku un iezīmi, saskarne būs saprotamāka un lietotājam draudzīgāka (attēlā pa labi).</p>
+        <p>Arī šī pamācība kopumā var kalpot par piemēru – <span className="Main-bold">pamācības saturs ir sadalīts vairākās sekcijās</span>, kas ir savstarpēji vizuāli atdalītas – katrai sekcijai ir galvenais virsraksts un sekcijām ir arī apakšsekcijas ar saviem virsrakstiem, un starp tām ir ievērotas atstarpes, kas dod skaidru priekšstatu par to, kur sākas un beidzas katra sekcija.</p>
       </section>      
       <section className="Main-fragment">
         <h2>Pielāgojamība</h2>
