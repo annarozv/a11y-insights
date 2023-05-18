@@ -26,7 +26,7 @@ function Designers() {
           <p>Pietiekams priekšplāna un fona krāsu kontrasts ļauj cilvēkiem ar tādiem redzes traucējumiem kā pasliktināta redze, zemāka kontrastjutība un krāsu uztveres īpatnībām pilnvērtīgi uztvert saturu. </p>
           <p className="Designers-goodcontrast Main-example Main-center">Šim tekstam <span className="Main-bold">ir nodrošināts</span> pietiekams kontrasta koeficients</p>
           <p className="Designers-badcontrast Main-example Main-center">Šim tekstam <span className="Main-bold">nav nodrošināts</span> pietiekams kontrasta koeficients</p>
-          <p>Pēc WCAG vadlīniju prasībām parastajam tekstam ir jānodrošina <span className="Main-bold">vismaz 4.5:1 kontrasta koeficients</span> ar fona krāsu, bet lielam tekstam (kas ir lielāks par 18px vai 14px treknrakstā) vismaz 3:1.</p> 
+          <p>Pēc WCAG vadlīniju prasībām parastajam tekstam ir jānodrošina <span className="Main-bold">vismaz 4.5:1 kontrasta koeficients</span> ar fona krāsu, bet lielam tekstam (kas ir lielāks par 18pt vai 14pt treknrakstā) vismaz 3:1.</p> 
           <p><span className="Main-bold">Svarīgi: baltā krāsa ar melno krāsu veido pārāk augstu kontrastu</span>, kas var radīt neērtības cilvēkiem ar redzes traucējumiem. Lai no tā izvairītos, ir ieteicams baltās krāsas vietā izvēlēties pelēkbalto vai bēšo un melnās krāsas vietā – tumši pelēko.</p>
           <p className="Designers-overcontrast Main-example Main-center">Melns teksts uz balta fona</p>
           <p>Kontrasta koeficientu starp krāsām var <span className="Main-bold">pārbaudīt ar automatizētiem rīkiem</span>, piemēram <Link className='Main-link' to='https://coolors.co/' target='_blank'>Coolors</Link>.</p> 
@@ -79,7 +79,7 @@ function Designers() {
           <h3>Izlīdzinājums</h3>
           <p>Teksta rindkopu <span className="Main-bold">izlīdzināšana centrā nav ieteicama</span>, jo pa centru izlīdzinātajā tekstā ir grūtāk atrast katras jaunas rindas sākumu:</p>
           <p className="Main-example Main-example-block Main-center">Senos laikos kaķis ar peli dzīvojuši kopā kā vīrs ar sievu vienā mājā. Kaķis gājis uz lauku medīt, un pelīte taisījusi ēdienu, cepusi gaļu un vārījusi putru. Pelīte bijusi laba un taupīga saimniece, un kaķis bijis ar viņu ļoti mierā. Reiz viņi abi kopā norunājuši iekrāt kaut ko arī bada dienām. Bet ko nu krāt? Pelīte sadomājusi, ka vislabāki būtu taukus krāt. Labi! Nu pelīte sākusi pa drusciņai vien lasīt taukus un krāt podiņā. Pēdīgi viņa piekrājusi pilnu podiņu, apsējusi ar platu kļavas lapu, un abi ar kaķīti aiznesuši uz mežu un paglabājuši biezos krūmos. (Avots: <Link to='https://pasakas.eu/kakis-un-pele-3' target='_blank'><u>Kaķis un pele</u></Link>)</p>
-          <p>Teksta <span className="Main-bold">izlīdzināšana gar abām malām ari nav ieteicama</span>, jo tekstā veidojas nekonsekventas atstarpes un tā saucamās upes (angliski <span lang="en"><i>rivers of white</i></span>) – atstarpes, kas iet caur vairākām rindām un pasliktina lasāmību:</p>
+          <p>Teksta <span className="Main-bold">izlīdzināšana gar abām malām arī nav ieteicama</span>, jo tekstā veidojas nekonsekventas atstarpes un tā saucamās upes (angliski <span lang="en"><i>rivers of white</i></span>) – atstarpes, kas iet caur vairākām rindām un pasliktina lasāmību:</p>
           <p className="Main-example Main-example-block Main-justify">Kaķis apprecēja žurku un abi sadzīvoja dažus gadus itin laimīgi. Te vienu reizi kaķim iegribējās tauku. Un žurkai jau no senākām dienām bija iekrājušies tauki, brangi podi; tādēļ kaķis iesāka gudrot, kā šos tauku podus rokā dabūt. Gudroja, gudroja – aizgāja pie žurkas tēva un iztriecās ilgi jo ilgi. Bet pārnācis mājā, nu iemelsa žurkai, ka viņas māte mirstot nost. Žurka, zināms, tūliņ prom māti raudzīt, vai taisnība, ko kaķis tur sateicis. Bet kāmēr žurka pie vecākiem, kaķis ēd taukus ārā. Patlaban jau rija beidzamo podu, te pārnāks žurka, ierauga: šis pie tauku podiem! Un nu sāk lieliski lamāties. Kaķis saka, lai viņu tā nelamājot. Bet kas tev klausīs? (Avots: <Link to='https://pasakas.eu/kakis-un-pele-2' target='_blank'><u>Kaķis un pele</u></Link>)</p>
           <p>Ieteicams ir <span className="Main-bold">izlīdzināt tekstu pa kreisi</span> (izņēmums ir valodas ar rakstību no labās uz kreiso pusi).</p>
         </section>
@@ -97,22 +97,14 @@ function Designers() {
         </section>
       </section>
       <section className="Main-fragment">
-        <h2>Kopējā satura struktūra un navigācija</h2>
-        <section className="Main-fragment Main-fragment__nested">
-          <h3>Informācijas hierarhija</h3>
-          <p>Lai veicinātu satura uztveramību, ir jādefinē <span className="Main-bold">skaidras attiecības starp satura komponentiem</span>. Šo var panākt, pielietojot grupēšanas principus:</p>
-          <figure className="Main-figure">
-            <img className="Main-img" src={GroupingExample} alt="Piemērs neveiksmīgam un veiksmīgam veidlapas ievadlauku noformējumam"></img>
-            <figcaption className="Main-img-caption">Grupēšanas principa pielietošana veidlapas ievadlaukiem</figcaption>
-          </figure>
-          <p>Vizuāli izkliedēti ievadlauki ar vienādām atstarpēm (attēlā pa kreisi) var rādīt lietotājam mulsinājumu un palielināt laiku, kas būs patērēts veidlapas aizpildīšanai, un, iespējams, palielināt arī kļūdu skaitu. Bet, ja mēs <span className="Main-bold">vizuāli sagrupēsim</span> katru ievadlauku un iezīmi, saskarne būs saprotamāka un lietotājam draudzīgāka (attēlā pa labi).</p>
-          <p>Arī šī pamācība kopumā var kalpot par piemēru – <span className="Main-bold">pamācības saturs ir sadalīts vairākās sekcijās</span>, kas ir savstarpēji vizuāli atdalītas – katrai sekcijai ir galvenais virsraksts un sekcijām ir arī apakšsekcijas ar saviem virsrakstiem, un starp tām ir ievērotas atstarpes, kas dod skaidru priekšstatu par to, kur sākas un beidzas katra sekcija.</p>
-        </section>
-        <section className="Main-fragment">
-          <h3>Navigācija</h3>
-          <p>Katrai tīmekļa vietnei ir nepieciešama <span className="Main-bold">skaidra un paredzama navigācija</span>. Šajā tīmekļa vietnē navigācijas panelis augšā ir pieejams katrā vietnes lapā. Tas ļauj izvairīties no situācijas, kur lietotājs varētu uzrasties “strupceļā”.</p>
-          <p>Šajā tīmekļa vietnē ir pieejama arī <Link className='Main-link' to='/navigation'>Vietnes karte</Link> – hierarhisks saraksts ar visām vietnes lapām.</p>
-        </section>
+        <h2>Kopējā satura struktūra</h2>
+        <p>Lai veicinātu satura uztveramību, ir jādefinē <span className="Main-bold">skaidras attiecības starp satura komponentiem</span>. Šo var panākt, pielietojot grupēšanas principus:</p>
+        <figure className="Main-figure">
+          <img className="Main-img" src={GroupingExample} alt="Piemērs neveiksmīgam un veiksmīgam veidlapas ievadlauku noformējumam"></img>
+          <figcaption className="Main-img-caption">Grupēšanas principa pielietošana veidlapas ievadlaukiem</figcaption>
+        </figure>
+        <p>Vizuāli izkliedēti ievadlauki ar vienādām atstarpēm (attēlā pa kreisi) var rādīt lietotājam mulsinājumu un palielināt laiku, kas būs patērēts veidlapas aizpildīšanai, un, iespējams, palielināt arī kļūdu skaitu. Bet, ja mēs <span className="Main-bold">vizuāli sagrupēsim</span> katru ievadlauku un iezīmi, saskarne būs saprotamāka un lietotājam draudzīgāka (attēlā pa labi).</p>
+        <p>Arī šī pamācība kopumā var kalpot par piemēru – <span className="Main-bold">pamācības saturs ir sadalīts vairākās sekcijās</span>, kas ir savstarpēji vizuāli atdalītas – katrai sekcijai ir galvenais virsraksts un sekcijām ir arī apakšsekcijas ar saviem virsrakstiem, un starp tām ir ievērotas atstarpes, kas dod skaidru priekšstatu par to, kur sākas un beidzas katra sekcija.</p>
       </section>      
       <section className="Main-fragment">
         <h2>Pielāgojamība</h2>

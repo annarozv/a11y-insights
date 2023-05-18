@@ -103,6 +103,13 @@ h3, h4 {
 
 u {
   text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0rem;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--anthracite);
+  border-width: 0;
 }
 
 .Nav-bar {
@@ -127,6 +134,7 @@ u {
   background-color: var(--anthracite);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0rem;
 }
 
 .Nav-sub {
@@ -157,6 +165,7 @@ u {
   background-color: var(--volcanic-glass);
   text-decoration: underline;
   text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0rem;
 }
 
 .Main {
@@ -198,6 +207,12 @@ u {
   max-width: 100%;
 }
 
+.Main-border-img {
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--anthracite);
+}
+
 .Main-img-caption {
   text-align: center;
   color: var(--volcanic-glass);
@@ -206,6 +221,7 @@ u {
 .Main-link {
   text-decoration: underline;
   text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0rem;
 }
 
 .Main-link:hover, .Main-link:focus {
@@ -217,11 +233,16 @@ u {
   list-style-position: outside;
   padding-left: 20px;
   margin-left: 40px;
+  margin-bottom: 30px;
 }
 
 .Main-list li {
   padding-left: 1.2rem;
   margin-bottom: 5px;
+}
+
+.Main-list__numeric {
+  list-style-type: decimal;
 }
 
 .Main-list__nested {
@@ -453,6 +474,7 @@ footer {
   margin-right: 50px;
   text-decoration: underline;
   text-underline-offset: 0.2rem;
+  text-decoration-thickness: 0rem;
 }
 
 .Footer-link:hover, .Footer-link:focus {
