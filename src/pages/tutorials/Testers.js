@@ -5,7 +5,7 @@ import TestingWave from "../../images/Testing_WAVE.png";
 
 function Testers() {
   useEffect(() => {
-    document.title = 'Piekļūstamības nodrošināšanas pamācība testētājiem | Piekļūstamības atziņas';
+    document.title = 'Piekļūstamības nodrošināšanas ieteikumi testētājiem | Piekļūstamības atziņas';
   }, []);
 
   useEffect(() => {
@@ -23,13 +23,13 @@ function Testers() {
       <section className="Main-fragment">
         <h2>Kontrolsaraksts</h2>
         <p>Pārskatīsim galvenos momentus, kas ir jāpārbauda katrai tīmekļa vietnes lapai.</p>
-        <p><span className="Main-bold">Svarīgi:</span> kontrolsarakstā ir apkopotas svarīgākās WCAG vadlīniju AA līmeņa prasības un iezīmētas pārbaudes metodes, detalizētākai informācijai <Link className="Main-link" to="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">skatīt WCAG vadlīnijas</Link>.</p>
+        <p><span className="Main-bold">Svarīgi:</span> kontrolsarakstā ir apkopotas svarīgākās WCAG vadlīniju AA līmeņa prasības un iezīmētas pārbaudes metodes. Detalizētākai informācijai <Link className="Main-link" to="https://www.w3.org/WAI/WCAG21/quickref/" target="_blank">skatīt WCAG vadlīnijas</Link>.</p>
         <section className="Main-fragment__nested">
           <h3>Struktūra</h3>
           <p>Pārbaudīt lapas pirmkodu:</p>
           <ul className="Main-list">
             <li>Vai satura iezīmēšanai tiek izmantoti <span className="Main-bold">korekti semantiskie apvalki</span> – piemēram, HTML <code>&lt;ul&gt;</code> tags saraksta iezīmēšanai, <code>&lt;h1&gt;</code> līdz <code>&lt;h6&gt;</code> virsrakstiem.</li>
-            <li>Vai <span className="Main-bold">virsraksti</span> tekstā tiek izmantoti konsekventi (izmantoti secīgi, un netiek izlaisti virsrakstu līmeņi).</li>
+            <li>Vai <span className="Main-bold">virsraksti</span> tekstā tiek izmantoti konsekventi (izmantoti secīgi, netiek izlaisti virsrakstu līmeņi).</li>
             <li>Vai satura <span className="Main-bold">struktūra atbilst satura vizuālajam izkārtojumam</span> (lai pārbaudītu šo, var pārlūkprogrammas inspektorā pilnībā izslēgt stilus jeb CSS stila lapas).</li>
           </ul>
         </section>
@@ -48,7 +48,7 @@ function Testers() {
           <h3>Kontrasts</h3>
           <p>Pārbaudīt, vai tekstam un vizuālajiem elementiem ir nodrošināts pietiekams <span className="Main-bold">kontrasts ar fona krāsu</span>:</p>
           <ul className="Main-list">
-            <li>Vismaz 4.5:1 krāsu kontrasta koeficients parastajam tekstam.</li>
+            <li>Vismaz 4.5:1 krāsu kontrasta koeficients parasta izmēra tekstam.</li>
             <li>Vismaz 3:1 krāsu kontrasta koeficients liela izmēra tekstam (lielāks par 18pt vai 14pt treknrakstā) un grafiskajiem elementiem.</li>
           </ul>
           <p>Pārbaudīt krāsu kontrasta koeficientu var ar <Link className="Main-link" to="https://webaim.org/resources/contrastchecker/" target="_blank">WAVE kontrasta pārbaudes rīku</Link>.</p>
@@ -67,14 +67,14 @@ function Testers() {
           <p>Pārbaudīt:</p>
           <ul className="Main-list">
             <li>Vai vietne ir pielāgojama <span className="Main-bold">dažādiem ekrāna izmēriem</span>: darbvirsmas, planšetdatora, viedtālruņa ekrāniem.</li>
-            <li>Vai vietne paliek lietojama, saturu <span className="Main-bold">palielinot uz 200%</span> – vai teksts netiek nogriezts un vai dažāda satura komponenti nepārklāj viens otru. </li>
+            <li>Vai vietne joprojām paliek lietojama, saturu <span className="Main-bold">palielinot līdz 200%</span> – vai teksts netiek nogriezts un vai dažāda satura komponenti nepārklāj viens otru. </li>
           </ul>
         </section>
         <section className="Main-fragment__nested">
           <h3>Ievade un kļūdu apstrāde</h3>
           <p>Pārbaudīt veidlapu un ievadlauku piekļūstamību:</p>
           <ul className="Main-list">
-            <li>Vai katram ievadlaukam ir korekti (automātiski noteicami) pievienota <span className="Main-bold">paskaidrojoša iezīme</span>.</li>
+            <li>Vai katram ievadlaukam ir korekti (automātiski nosakami) pievienota <span className="Main-bold">paskaidrojoša iezīme</span>.</li>
             <li>Vai pirms veidlapas iesniegšanas ir iespējams <span className="Main-bold">izlabot validācijas kļūdas</span>.</li>
             <li>Vai pirms veidlapas iesniegšanas lietotājam tiek dota iespēja <span className="Main-bold">pārskatīt</span> ievadītus datus un <span className="Main-bold">apstiprināt iesniegšanu</span>.</li>
           </ul>
@@ -83,7 +83,7 @@ function Testers() {
           <h3>Tastatūras piekļūstamība un fokusa secība</h3>
           <p>Pārbaudīt:</p>
           <ul className="Main-list">
-            <li>Vai tīmekļa vietni ir iespējams izmantot pilnvērtīgi, izmantojot tikai tastatūru <span className="Main-bold">bez peles</span>.</li>
+            <li>Vai tīmekļa vietni ir iespējams pilnvērtīgi izmantot tikai ar tastatūru <span className="Main-bold">bez peles</span>.</li>
             <li>Vai, izmantojot <span className="Main-bold">Tab</span> taustiņu pārvietošanai, <span className="Main-bold">pārvietošana notiek secīgi</span> (no augšas uz apakšu, no kreisās puses uz labo pusi, bez neloģiskiem pārtraukumiem vai secības izmaiņām).</li>
           </ul>
         </section>
@@ -104,7 +104,7 @@ function Testers() {
           <img className="Main-img Main-border-img" src={TestingWave} alt="WAVE testēšanas rīka panelis"></img>
           <figcaption className="Main-img-caption">WAVE testēšanas rīka rezultātu pārskats</figcaption>
         </figure>
-        <p>Kā arī, gandrīz katra mūsdienīga pārlūkprogramma satur <span className="Main-bold">piekļūstamības sekciju inspektorā</span>:</p>
+        <p>Gandrīz katra mūsdienīga pārlūkprogramma satur <span className="Main-bold">piekļūstamības sekciju inspektorā</span>:</p>
         <figure className="Main-figure">
           <img className="Main-img Main-border-img" src={TestingFirefox} alt="Ekrānattēls no Firefox pārlūkprogrammas inspektora piekļūstamības sekcijas"></img>
           <figcaption className="Main-img-caption">Firefox inspektora piekļūstamības sekcija: ir redzama fokusa secības un kontrasta pārbaude</figcaption>
@@ -131,16 +131,16 @@ function Testers() {
       </section>
       <section className="Main-fragment">
         <h2>Lietotāju dalība</h2>
-        <p>Katrs lietotājs mijiedarbojas ar tehnoloģijām <span className="Main-bold">citādi</span>. Mēs nezinām, kā tieši, un nekad nevarēsim šo zināt. Kā arī, mēs nekad nevarēsim nodrošināt perfektu lietotāja pieredzi katram konkrētam lietotājam. Bet eksistē dažas efektīvas metodes, kas var palīdzēt mums apmierināt pēc iespējas vairāk lietotāju vajadzības. Viena no tām ir <span className="Main-bold">lietotāju iesaistīšana testēšanas procesa</span>.</p>
+        <p>Katrs lietotājs mijiedarbojas ar tehnoloģijām <span className="Main-bold">citādi</span>. Mēs nezinām, kā tieši, un nekad nevarēsim šo pilnībā zināt. Visticamāk, mēs nekad nevarēsim nodrošināt perfektu lietotāja pieredzi katram konkrētam lietotājam. Bet eksistē dažas efektīvas metodes, kas var palīdzēt mums apmierināt pēc iespējas vairāk lietotāju vajadzības. Viena no tām ir <span className="Main-bold">lietotāju iesaistīšana testēšanas procesa</span>.</p>
         <p><span className="Main-bold">Galvenais mērķis:</span> atklāt vēl nezināmas un nenovērstas produkta piekļūstamības barjeras.</p>
-        <p>Ir svarīgi ne tikai formāli apmierināt vadlīniju prasības, bet <span className="Main-bold">uztaisīt tiešam piekļūstamu un lietojamu produktu</span>.</p>
+        <p>Ir svarīgi ne tikai formāli apmierināt vadlīniju prasības, bet <span className="Main-bold">uztaisīt tiešām piekļūstamu un lietojamu produktu</span>.</p>
         <p>Ieteikumi efektīvai un produktīvai lietotāju iesaistīšanai:</p>
         <ul className="Main-list Main-list__numeric">
-          <li>Izvēlēties <span className="Main-bold">reprezentatīvu</span> testētāju grupu – dažāda vecuma un dzimuma lietotājus, un lietotājus ar dažāda veida ierobežojumiem</li>
-          <li>Uzturēt <span className="Main-bold">draudzīgu</span> un nesaspringtu atmosfēru</li>
-          <li>Ļaut lietotājiem <span className="Main-bold">brīvi mijiedarboties</span> ar produktu vai tā prototipu</li>
-          <li><span className="Main-bold">Piefiksēt</span> rezultātus</li>
-          <li><span className="Main-bold">Objektīvi novērtēt</span> rezultātus un ekstrapolēt tos uzmanīgi</li>
+          <li>Izvēlēties <span className="Main-bold">reprezentatīvu</span> testētāju grupu – dažāda vecuma un dzimuma lietotājus, un lietotājus ar dažāda veida ierobežojumiem.</li>
+          <li>Uzturēt <span className="Main-bold">draudzīgu</span> un nesaspringtu atmosfēru.</li>
+          <li>Ļaut lietotājiem <span className="Main-bold">brīvi mijiedarboties</span> ar produktu vai tā prototipu.</li>
+          <li><span className="Main-bold">Pierakstīt</span> rezultātus.</li>
+          <li><span className="Main-bold">Novērtēt rezultātus objektīvi</span> un ekstrapolēt tos piesardzīgi.</li>
         </ul>
       </section>
       <hr role="presentation"/>
