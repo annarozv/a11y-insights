@@ -16,7 +16,7 @@ function Header() {
         <ul className='Nav-links'>
           <li className='Nav-dropping-link'>
             <Link className='Nav-link' to='/tutorials'>
-                Pamācības
+                Ieteikumi
             </Link>
           </li>
           <li>

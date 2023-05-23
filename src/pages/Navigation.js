@@ -18,24 +18,24 @@ function Navigation() {
           <Link className="Main-link" to='/'>Sākumlapa</Link>
         </li>
         <li>
-          <Link className="Main-link" to='/tutorials'>Pamācības</Link>
+          <Link className="Main-link" to='/tutorials'>Piekļūstamības nodrošināšanas ieteikumi</Link>
           <ul className="Main-list Main-list__nested">
             <li>
-              <Link className="Main-link" to='/designers'>Pamācības dizaineriem</Link>
+              <Link className="Main-link" to='/designers'>Piekļūstamības nodrošināšanas ieteikumi dizaineriem</Link>
             </li>
             <li>
-              <Link className="Main-link" to='/content-makers'>Pamācības satura veidotājiem</Link>
+              <Link className="Main-link" to='/content-makers'>Piekļūstamības nodrošināšanas ieteikumi satura veidotājiem</Link>
             </li>
             <li>
-              <Link className="Main-link" to='/developers'>Pamācības programmētājiem</Link>
+              <Link className="Main-link" to='/developers'>Piekļūstamības nodrošināšanas ieteikumi programmētājiem</Link>
             </li>
             <li>
-              <Link className="Main-link" to='/testers'>Pamācības testētājiem</Link>
+              <Link className="Main-link" to='/testers'>Piekļūstamības nodrošināšanas ieteikumi testētājiem</Link>
             </li>
           </ul>
         </li>
         <li>
-          <Link className="Main-link" to='/resources'>Resursi</Link>
+          <Link className="Main-link" to='/resources'>Inforesursi</Link>
         </li>
         <li>
           <Link className="Main-link" to='/about'>Par mums</Link>

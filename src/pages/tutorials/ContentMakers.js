@@ -4,7 +4,7 @@ import AltExample from '../../images/ALT_text.jpg';
 
 function ContentMakers() {
   useEffect(() => {
-    document.title = 'Piekļūstamības nodrošināšanas pamācība satura veidotājiem | Piekļūstamības atziņas';
+    document.title = 'Piekļūstamības nodrošināšanas ieteikumi satura veidotājiem | Piekļūstamības atziņas';
   }, []);
 
   useEffect(() => {
@@ -13,17 +13,17 @@ function ContentMakers() {
 
   return (
     <>
-      <h1>Piekļūstamības nodrošināšana satura veidotājiem</h1>    
+      <h1>Piekļūstamības nodrošināšanas ieteikumi satura veidotājiem</h1>    
       <section className="Main-fragment">
         <h2>Galvenie aspekti</h2>
-        <p>Publicējama satura piekļūstamība ir <span className="Main-bold">satura veidotāja atbildība</span>. Arī tos gadījumos, kad tiek izmantotas eksistējošās satura pārvaldības platformas – piemēram, publicējot saturu savā vietnē Wix vai WordPress vai publicējot video YouTube vai Vimeo platformās. </p>
+        <p>Publicējamā satura piekļūstamība ir <span className="Main-bold">satura veidotāja atbildība</span>. Arī tos gadījumos, kad tiek izmantotas eksistējošās satura pārvaldības platformas – piemēram, publicējot saturu savā vietnē Wix vai WordPress vidē vai publicējot video YouTube vai Vimeo platformās. </p>
         <p>Izstrādājot piekļūstamu saturu, galvenie fokusa punkti ir satura <span className="Main-bold">saprotamība</span> un <span className="Main-bold">uztveramība</span>.</p>
         <p><span className="Main-bold">Svarīgi:</span> lai uzzinātu, kā <span className="Main-bold">piekļūstami noformēt</span> izstrādāto saturu, korekti izvēloties krāsas un noformējot tekstu, ieskatieties <Link className="Main-link" to='/designers'>Piekļūstamības nodrošināšanas pamācībā dizaineriem</Link>.</p>
       </section>
       <section className="Main-fragment">
         <h2>Uztverams saturs</h2>
         <p><span className="Main-bold">Iespēja atšķirt priekšplāna saturu no fona satura</span> gan vizuālajiem, gan tekstuālajiem, gan video un audio materiāliem ir kritiski svarīga satura uztveramībai.</p>
-        <p>Ja, piemēram, video satur mūziku fonā, tai <span className="Main-bold">nedrīkstētu traucēt</span> uztvert galveno video saturu, vai arī ir jāparedz iespēja izslēgt fona mūziku.</p>
+        <p>Ja, piemēram, videomateriāls satur fona mūziku, tai <span className="Main-bold">nedrīkstētu traucēt</span> uztvert galveno video saturu, vai arī ir jāparedz iespēja izslēgt fona mūziku.</p>
         <p>Noformējot tekstu vai attēlus un citus vizuālos materiālus, ir jāņem vērā krāsu <span className="Main-bold">kontrasta koeficients</span> (skatīt <Link className="Main-link" to='/designers'>Piekļūstamības nodrošināšana dizaineriem</Link>).</p>
       </section>
       <section className="Main-fragment">
@@ -51,12 +51,12 @@ function ContentMakers() {
         <p><span className="Main-bold">Universālākās vienmēr ir tekstuālās alternatīvas</span> netekstuālajam saturam, jo tās ir visvienkāršāk automātiski pārvērst citā formātā.</p>
         <section className="Main-fragment__nested">
           <h3>Audio un videomateriāliem</h3>
-          <p>Lai padarītu audio un videoierakstus par piekļūstamiem, tiem ir jāpievieno <span className="Main-bold">transkripti</span>. Videomateriāliem transkripti nav obligāti, bet tiem ir jāpievieno <span className="Main-bold">subtitri vai uzraksti</span> (angliski <span lang="en"><i>captions</i></span>).</p>
-          <p><span className="Main-bold">Ieguvēji ir ne tikai lietotāji ar īpašajām vajadzībām</span> – ari citiem lietotājiem tie materiāli var būt noderīgi. Piemērs ir lietotāji, kas mēģinās piekļūt saturam trokšņainajā vietā vai lietotāji, kas apgūst svešvalodas un mēģina patērēt saturu svešvalodās.</p>
+          <p>Lai padarītu audioierakstus par piekļūstamiem, tiem ir jāpievieno <span className="Main-bold">transkripti</span>. Videomateriāliem ir jāpievieno <span className="Main-bold">subtitri vai uzraksti</span> (angliski <span lang="en"><i>captions</i></span>).</p>
+          <p><span className="Main-bold">Ieguvēji ir ne tikai lietotāji ar īpašām vajadzībām</span> – arī citiem lietotājiem šie materiāli var būt noderīgi. Piemērs ir lietotāji, kas mēģinās piekļūt saturam trokšņainajā vietā vai lietotāji, kas apgūst svešvalodas un mēģina patērēt saturu svešvalodās.</p>
         </section>
         <section className="Main-fragment">
           <h3>ALT teksts attēliem</h3>
-          <p>Attēla ALT teksts ir <span className="Main-bold">īss un kodolīgs attēla satura apraksts vienā teikumā</span>, kas palīdz paskaidrot attēla saturu lietotājiem, kas nevar to uztvert vizuāli.</p>
+          <p>Attēla alternatīvais (ALT) teksts ir <span className="Main-bold">īss un kodolīgs attēla satura apraksts vienā teikumā</span>, kas palīdz paskaidrot attēla saturu lietotājiem, kuri nevar to uztvert vizuāli.</p>
           <p><code>alt</code> ir HTML taga <code>&lt;img&gt;</code> atribūts:</p>
           <pre className="Code-snippet" aria-label="Koda bloks">
             <code>
@@ -102,15 +102,15 @@ function ContentMakers() {
         <p>Piemērs informatīvajam saites nosaukumam:</p>
         <p className="Main-example Main-center">Skatīt <Link className="Content-example-link" to='/developers'><u>piekļūstamības nodrošināšanas pamācību programmētājiem</u></Link></p>
         <p>Kategoriski <span className="Main-bold">nav ieteikts</span> ierakstīt saites tekstuālajā daļā šādu tekstu:</p>
-        <p className="Main-example Main-center"><Link className="Content-badlink"><u>Spied šeit</u></Link> vai <Link className="Content-badlink"><u>Šeit</u></Link></p>
-        <p>Lietotāji, kas izmanto ekrānlasītāju, <span className="Main-bold">nevarēs uzzināt, uz ko norāda saite</span>. Ne tikai tas pasliktina piekļūstamību, bet arī var tikt uztverts no Google meklēšanas mehānismu puses kā mēstuļošana jeb spams.</p>
+        <p className="Main-example Main-center"><Link className="Content-badlink" aria-label="Sliktas prakses piemērs saites nosaukuma pievienošanai"><u>Spied šeit</u></Link> vai <Link className="Content-badlink" aria-label="Sliktas prakses piemērs saites nosaukuma pievienošanai"><u>Šeit</u></Link></p>
+        <p>Lietotāji, kas izmanto ekrānlasītāju, <span className="Main-bold">nevarēs uzzināt, uz ko norāda saite</span>. Tas ne tikai pasliktina piekļūstamību, bet arī no Google meklēšanas mehānismu puses var tikt uztverts kā mēstuļošana jeb spams.</p>
         <p><span className="Main-bold">Patīkams pārsteigums:</span> arī piekļūstami nosaukumi saitēm <span className="Main-bold">uzlabo SEO</span>.</p>
       </section>
       <section className="Main-fragment">
         <h2>Nepiekļūstamu simbolu izmantošana</h2>
         <p>Ir situācijas, kad mums ir vēlme saturā izmantot simbolus – piemēram, Unicode simbolus:</p>
         <p className="Main-example Main-center Content-hearts" aria-label="Trīs sirsniņas">&#9825;&#9825;&#9825;</p>
-        <p>Diemžēl tie <span className="Main-bold">nav piekļūstami</span> lietotājiem, kas izmanto ekrānlasītājus.</p> 
+        <p>Diemžēl tie <span className="Main-bold">nav piekļūstami</span> lietotājiem, kuri izmanto ekrānlasītājus.</p> 
         <p>Labākajā gadījumā tie tiks ignorēti, bet, visticamāk, lietotājs saņems nesaprotamu informāciju, palīgtehnoloģijai mēģinot tos interpretēt.</p>
         <p>Šo var novērst, izmantojot iezīmes vai atzīmējot saturu kā kaut ko, kas palīgtehnoloģijām ir jāignorē. HTML valodā to var panākt, izmantojot <span className="Main-bold">ARIA atribūtus</span>.</p>
         <p>Ar <code>aria-hidden</code> var padarīt simbolu par “neredzamu” ekrānlasītājiem, ja simbols ir <span className="Main-bold">tīri dekoratīvs</span>:</p>
@@ -129,7 +129,7 @@ function ContentMakers() {
       <section className="Main-fragment">
         <h2>Satura nebīstamība</h2>
         <p>Lietotājam ir jābūt iespējai <span className="Main-bold">apturēt vai paslēpt jebkuru kustīgo saturu</span>.</p>
-        <p>Īpaši jāuzmanās ir ar bieži mirgojošo saturu, kas var provocēt epilepsijas lēkmes. <span className="Main-bold">Pirms mirgojoša satura parādīšanas ir jāparāda brīdinājums</span>!</p>
+        <p>Īpaši jāuzmanās ir ar bieži mirgojošu saturu, kas var provocēt epilepsijas lēkmes. <span className="Main-bold">Pirms mirgojoša satura parādīšanas ir jāparāda brīdinājums</span>!</p>
       </section>
       <hr role="presentation"/>
       <ul className="Main-list Main-list__final">

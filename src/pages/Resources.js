@@ -30,7 +30,7 @@ function Resources() {
       </section>
       <section className="Main-fragment">
         <h2>Vadlīnijas</h2>
-        <p>Galvenās tīmekļa satura nodrošināšanas vadlīnijas, kas ir pamata visiem tiesiskajiem regulējumiem, kas ir spēkā Latvijā un Eiropas Savienībā, ir <span className="Main-bold">Tīmekļa satura piekļūstamības vadlīnijas</span> jeb WCAG (angliski <span lang="en"><i>Web Content Accessibility Guidelines</i></span>) vadlīnijas. Arī šajā tīmekļa vietnē atrodamas pamācības tika izstrādātās, balstoties uz WCAG vadlīnijām.</p>
+        <p>Galvenās tīmekļa satura nodrošināšanas vadlīnijas, kas ir pamata visiem tiesiskajiem regulējumiem, kas ir spēkā Latvijā un Eiropas Savienībā, ir <span className="Main-bold">Tīmekļa satura piekļūstamības vadlīnijas</span> jeb WCAG (angliski <span lang="en"><i>Web Content Accessibility Guidelines</i></span>) vadlīnijas. Arī šajā tīmekļa vietnē atrodami ieteikumi tika izstrādāti, balstoties uz WCAG vadlīnijām.</p>
         <p>Vairāk informācijas:</p>
         <ul className="Main-list">
           <li>
@@ -48,7 +48,7 @@ function Resources() {
               to="https://www.w3.org/WAI/WCAG21/quickref/" 
               target="_blank"
             >
-                Dinamisks WCAG prasību un paņēmienu saraksts (angļu valodā)
+                WCAG prasību un paņēmienu saraksts (angļu valodā)
             </Link>
           </li>
         </ul>
